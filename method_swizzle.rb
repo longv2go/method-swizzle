@@ -17,7 +17,7 @@ module MethodSwizzle
     begin
       orgin_method = clazz.instance_method(method)
     rescue NameError => e
-      Log.w "Not found method '#{method}' in '#{clazz}'"
+      puts "Not found method '#{method}' in '#{clazz}'"
       return
     end
 
